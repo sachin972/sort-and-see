@@ -1,3 +1,7 @@
+import './Drawing';
+import './Main';
+import './Sorting';
+
 async function selectionSort(arr) {
     let n = arr.length;
         

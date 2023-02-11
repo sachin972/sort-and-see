@@ -1,3 +1,7 @@
+import './Algorithms';
+import './Drawing';
+import './Main';
+
 var arr = [34, 23];
 var block = '<div class="block"></div>';
 var piles = '<div class="pile"></div>';

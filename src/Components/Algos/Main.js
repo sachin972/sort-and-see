@@ -1,3 +1,7 @@
+import './Algorithms';
+import './Drawing';
+import './Sorting';
+
 let scene, camera, renderer, cube;
 function init () {
     const THREE = require('three');

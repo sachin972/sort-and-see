@@ -1,3 +1,7 @@
+import './Algorithms';
+import './Main';
+import './Sorting';
+
 function generateArray(){
     var size = 10;
     let n
