@@ -1,10 +1,8 @@
-import './Algorithms';
-import './Drawing';
-import './Sorting';
+const THREE = require('three');
 
 let scene, camera, renderer, cube;
 function init () {
-    const THREE = require('three');
+    
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0xff0000 );
 
@@ -35,13 +33,11 @@ function animate () {
 }
 
 function onWindowResize() {
+    // const camera = new three();
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-window.addEventListener('resize', onWindowResize, false)
 
-
-init();
-animate();
+export {init,animate,onWindowResize};

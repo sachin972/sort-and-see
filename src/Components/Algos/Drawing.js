@@ -1,6 +1,4 @@
-import './Algorithms';
-import './Main';
-import './Sorting';
+import * as Sorts from './Sorting';
 
 function generateArray(){
     var size = 10;
@@ -17,13 +15,18 @@ function generateArray(){
 }
 
 var draw = (arr) => {
-    q.innerHTML = "";
+    // console.log(Sorts.q);
+    // Sorts.q.innerHTML = "";
+    var q = document.querySelector(".numbers");
+    // console.log(arr.length);
     for (let i = 0; i < arr.length; i++) {
         const p = arr[i];
-        q.innerHTML += block;
+        q.innerHTML += Sorts.block;
         var j = document.getElementsByClassName("block")[i];
+        // console.log(j);
+        // console.log(i);
         for(let k=0; k<p; k++){
-            j.innerHTML += piles;
+            j.innerHTML += Sorts.piles;
         }
     }
 };
@@ -31,3 +34,5 @@ var draw = (arr) => {
 function sleep(milliseconds) {  
     return new Promise(resolve => setTimeout(resolve, milliseconds));  
 }
+
+export {generateArray, draw, sleep};

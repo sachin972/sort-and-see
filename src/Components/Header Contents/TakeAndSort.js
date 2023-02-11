@@ -1,5 +1,7 @@
 import React from "react";
 // import * as Algo from '../Algos/Sorting';
+import {validate} from '../Algos/Sorting';
+import { generateArray } from "../Algos/Drawing";
 
 function GetAndSort() {
 

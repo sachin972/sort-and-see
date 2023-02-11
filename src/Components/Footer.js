@@ -1,4 +1,6 @@
 import React from "react";
+import {init,animate, onWindowResize} from './Algos/Main';
+// import 
 
 
 function Footer(){
@@ -10,12 +12,19 @@ function Footer(){
         fontSize: 'large'
     }
 
+
     return (
+        <footer>
+            <script>{init}</script>
+            <script>{animate}</script>
+            <script>{window.addEventListener('resize', onWindowResize, false)}</script>
         <p style={styling}>
             Design with ❤️  by 
             <a href="http://github.com/sachin972">Sachin Tripathi </a>
             <br/> All Rights Reserved
         </p>
+
+        </footer>
     );
 }
 
