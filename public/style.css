@@ -6,8 +6,15 @@
     font-size: 4rem;
 }
 
-body{
-    background-image: url('./textures/wall.jpg');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#root{
+    /* background-image: url('./textures/wall.jpg'); */
+    background-color: rgb(34, 34, 52);
 }
 
 .block{
@@ -123,4 +130,10 @@ p{
     width: auto;
 }
 
+.s1{
+    background-color: rgb(53, 49, 79);
+}
 
+footer{
+    background-color: black;
+}
